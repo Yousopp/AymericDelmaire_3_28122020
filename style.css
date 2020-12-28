@@ -13,4 +13,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px #eaeaea;
+}
+
+.call-to-action {
+  border-radius: 50px;
+  background: linear-gradient(-5deg, #9356dc, #ff79da);
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
