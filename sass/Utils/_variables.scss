@@ -7,6 +7,10 @@ $color-light: #f6f6f6;
 $color-middle: #eaeaea;
 $color-dark: #353535;
 
+.b {
+  border: red solid 1px;
+}
+
 .flex-column-center {
   display: flex;
   flex-direction: column;
@@ -16,4 +20,13 @@ $color-dark: #353535;
 
 .box-shadow {
   box-shadow: 5px 5px 5px $color-middle;
+}
+
+.padding-topbot {
+  &-20 {
+    padding: 20px 0;
+  }
+  &-15 {
+    padding: 15px 0;
+  }
 }

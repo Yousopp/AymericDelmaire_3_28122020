@@ -1,4 +1,6 @@
-.section-header {
+.header {
   text-align: center;
-  padding: 20px 0;
+  &__city {
+    background-color: $color-middle;
+  }
 }
