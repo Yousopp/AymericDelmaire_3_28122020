@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px #eaeaea;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +22,6 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.flex-column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-shadow {
-  box-shadow: 5px 5px 5px #eaeaea;
 }
 
 .call-to-action {
