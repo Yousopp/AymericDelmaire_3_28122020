@@ -7,6 +7,8 @@ $color-light: #f6f6f6;
 $color-middle: #eaeaea;
 $color-dark: #353535;
 
+$color-shadow: #cecece;
+
 .b {
   border: red solid 1px;
 }
@@ -18,8 +20,14 @@ $color-dark: #353535;
   align-items: center;
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .box-shadow {
-  box-shadow: 5px 5px 5px $color-middle;
+  box-shadow: 5px 5px 5px $color-shadow;
 }
 
 .padding-topbot {

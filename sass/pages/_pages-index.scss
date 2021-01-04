@@ -1,6 +1,39 @@
 .header {
   text-align: center;
+  &__heading {
+    padding: 20px 0 12px 0;
+    z-index: 1;
+  }
   &__city {
     background-color: $color-middle;
+    box-shadow: inset 0 5px 5px $color-shadow;
+    padding-right: 30px;
+  }
+}
+
+#logomaps {
+  margin-right: 15px;
+}
+
+/*explorer*/
+
+.explorer {
+  padding: 40px 0 55px 0;
+  text-align: center;
+  background-color: $color-light;
+  &__heading {
+    padding: 0 65px 30px 65px;
+  }
+  &__texte {
+    padding: 0 40px 30px 40px;
+  }
+}
+
+/*functioning*/
+
+.functioning {
+  padding: 20px;
+  &__heading {
+    padding: 30px 0 25px 0;
   }
 }
