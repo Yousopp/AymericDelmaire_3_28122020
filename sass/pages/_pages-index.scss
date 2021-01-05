@@ -33,7 +33,31 @@
 
 .functioning {
   padding: 20px;
-  &__heading {
+  .functioning__heading {
     padding: 30px 0 25px 0;
+  }
+  .functioning__bouton {
+    background-color: $color-light;
+    border-radius: 12px;
+    margin: 25px 0 25px 10px;
+    padding: 25px 0;
+    .functioning__bouton--active {
+      background-color: $colour-primary;
+    }
+  }
+  .functioning__logo {
+    margin-left: 35px;
+  }
+  .functioning__text {
+    margin-left: 25px;
+    font-weight: 500;
+  }
+  .functioning__circle {
+    background-color: $colour-primary;
+    padding: 4px 10px;
+    border-radius: 50%;
+    color: $color-white;
+    position: absolute;
+    left: 20px;
   }
 }

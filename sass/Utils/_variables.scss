@@ -8,6 +8,7 @@ $color-middle: #eaeaea;
 $color-dark: #353535;
 
 $color-shadow: #cecece;
+$color-logo: #7e7e7e;
 
 .b {
   border: red solid 1px;
@@ -24,6 +25,12 @@ $color-shadow: #cecece;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.flex-functioning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .box-shadow {

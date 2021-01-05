@@ -16,6 +16,12 @@
   justify-content: center;
 }
 
+.flex-functioning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .box-shadow {
   box-shadow: 5px 5px 5px #cecece;
 }
@@ -83,8 +89,32 @@ body {
 .functioning {
   padding: 20px;
 }
-.functioning__heading {
+.functioning .functioning__heading {
   padding: 30px 0 25px 0;
+}
+.functioning .functioning__bouton {
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  margin: 25px 0 25px 10px;
+  padding: 25px 0;
+}
+.functioning .functioning__bouton .functioning__bouton--active {
+  background-color: #9356dc;
+}
+.functioning .functioning__logo {
+  margin-left: 35px;
+}
+.functioning .functioning__text {
+  margin-left: 25px;
+  font-weight: 500;
+}
+.functioning .functioning__circle {
+  background-color: #9356dc;
+  padding: 4px 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
