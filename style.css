@@ -97,12 +97,17 @@ body {
   border-radius: 12px;
   margin: 25px 0 25px 10px;
   padding: 25px 0;
+  transition: ease 0.4s;
 }
-.functioning .functioning__bouton .functioning__bouton--active {
-  background-color: #9356dc;
+.functioning .functioning__bouton:hover {
+  background-color: #f5edff;
+}
+.functioning .functioning__bouton:hover svg {
+  fill: #9356dc;
 }
 .functioning .functioning__logo {
   margin-left: 35px;
+  fill: #7e7e7e;
 }
 .functioning .functioning__text {
   margin-left: 25px;

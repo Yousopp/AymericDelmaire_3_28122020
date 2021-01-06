@@ -41,12 +41,17 @@
     border-radius: 12px;
     margin: 25px 0 25px 10px;
     padding: 25px 0;
-    .functioning__bouton--active {
-      background-color: $colour-primary;
+    transition: ease 0.4s;
+    &:hover {
+      background-color: $colour-primary-active;
+      & svg {
+        fill: $colour-primary;
+      }
     }
   }
   .functioning__logo {
     margin-left: 35px;
+    fill: $color-logo;
   }
   .functioning__text {
     margin-left: 25px;
