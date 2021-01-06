@@ -67,8 +67,7 @@ body {
   box-shadow: inset 0 5px 5px #cecece;
   padding-right: 30px;
 }
-
-#logomaps {
+.header__city__logomaps {
   margin-right: 15px;
 }
 
@@ -89,31 +88,31 @@ body {
 .functioning {
   padding: 20px;
 }
-.functioning .functioning__heading {
+.functioning__heading {
   padding: 30px 0 25px 0;
 }
-.functioning .functioning__bouton {
+.functioning__bouton {
   background-color: #f6f6f6;
   border-radius: 12px;
   margin: 25px 0 25px 10px;
   padding: 25px 0;
   transition: ease 0.4s;
 }
-.functioning .functioning__bouton:hover {
+.functioning__bouton:hover {
   background-color: #f5edff;
 }
-.functioning .functioning__bouton:hover svg {
+.functioning__bouton:hover svg {
   fill: #9356dc;
 }
-.functioning .functioning__logo {
+.functioning__logo {
   margin-left: 35px;
   fill: #7e7e7e;
 }
-.functioning .functioning__text {
+.functioning__text {
   margin-left: 25px;
   font-weight: 500;
 }
-.functioning .functioning__circle {
+.functioning__circle {
   background-color: #9356dc;
   padding: 4px 10px;
   border-radius: 50%;
@@ -123,5 +122,47 @@ body {
 }
 
 /*restaurants*/
+.restaurant {
+  padding: 60px 20px 65px 20px;
+  background-color: #f6f6f6;
+}
+.restaurant__heading {
+  padding-bottom: 20px;
+}
+.restaurant__card {
+  border-radius: 12px;
+  height: 250px;
+  width: 335px;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+.restaurant__image {
+  border-radius: 12px 12px 0 0;
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__image--position-1 {
+  object-position: bottom;
+}
+.restaurant__image--position-2 {
+  object-position: 50% 62%;
+}
+.restaurant__texte {
+  padding: 12px 20px 12px 12px;
+  height: 75px;
+}
+.restaurant__texte h3 {
+  margin-bottom: 5px;
+}
+.restaurant__lien {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__heart {
+  position: relative;
+  float: right;
+  bottom: 35px;
+}
 
 /*# sourceMappingURL=style.css.map */
