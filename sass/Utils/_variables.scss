@@ -22,10 +22,12 @@ $color-logo: #7e7e7e;
   align-items: center;
 }
 
-.flex-row-center {
+.flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  &--center {
+    justify-content: center;
+  }
 }
 
 .flex-functioning {

@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+  &__heading {
+    padding: 20px 0 12px 0;
+  }
+  &__city {
+    background-color: $color-middle;
+    box-shadow: inset 0 5px 5px $color-shadow;
+    padding-right: 30px;
+    &__logomaps {
+      margin-right: 15px;
+    }
+  }
+}
+
+.footer {
+  padding: 25px;
+  color: $color-white;
+  background-color: $color-dark;
+  line-height: 25px;
+  &__heading {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__lien {
+    text-decoration: none;
+    color: $color-white;
+  }
+  & svg {
+    fill: $color-white;
+    margin-right: 10px;
+  }
+}
