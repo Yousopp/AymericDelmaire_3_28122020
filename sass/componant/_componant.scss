@@ -5,3 +5,14 @@
   padding: 20px;
   color: $color-white;
 }
+
+.bouton-nouveau {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 245px;
+  width: 80px;
+  height: 30px;
+  background-color: $colour-third;
+  border-radius: 3px;
+  color: $colour-third-dark;
+}

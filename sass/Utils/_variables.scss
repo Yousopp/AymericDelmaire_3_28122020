@@ -2,6 +2,7 @@ $colour-primary: #9356dc;
 $colour-primary-active: #f5edff;
 $colour-secondary: #ff79da;
 $colour-third: #99e2d0;
+$colour-third-dark: #518578;
 
 $color-white: #ffffff;
 $color-light: #f6f6f6;
@@ -27,6 +28,7 @@ $color-logo: #7e7e7e;
   flex-direction: row;
   &--center {
     justify-content: center;
+    align-items: center;
   }
 }
 
