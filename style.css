@@ -3,11 +3,18 @@
   border: red solid 1px;
 }
 
-.flex-column-center {
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+.flex-column--center {
   justify-content: center;
+}
+.flex-column--align {
   align-items: center;
+}
+.flex-column--bot {
+  justify-content: flex-end;
 }
 
 .flex-row {
@@ -16,6 +23,9 @@
 }
 .flex-row--center {
   justify-content: center;
+  align-items: center;
+}
+.flex-row--align {
   align-items: center;
 }
 
@@ -48,6 +58,10 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -56,13 +70,23 @@ body {
 .header__heading {
   padding: 20px 0 12px 0;
 }
+.header__heading--margin-right {
+  margin-right: 15px;
+}
 .header__city {
   background-color: #eaeaea;
   box-shadow: inset 0 5px 5px #cecece;
   padding-right: 30px;
 }
-.header__logomaps {
+.header__logo-maps {
   margin-right: 15px;
+}
+.header__logo-arrow {
+  float: left;
+  margin-left: 15px;
+}
+.header__lien {
+  text-decoration: none;
 }
 
 .footer {
@@ -84,12 +108,81 @@ body {
   margin-right: 10px;
 }
 
+.image-presentation {
+  object-fit: cover;
+}
+
+.menu {
+  padding: 40px 12.5px 0 12.5px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -50px;
+}
+.menu__heading {
+  padding-left: 5px;
+  margin-right: 30px;
+  font-size: 30px;
+}
+.menu__second-heading {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.menu hr {
+  border: none;
+  margin-top: 5px;
+  background-color: #99e2d0;
+  width: 40px;
+  height: 4px;
+}
+.menu__bouton {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 15px 0;
+  padding: 10px 15px;
+  width: 320px;
+}
+.menu__part-text {
+  width: 87%;
+}
+.menu__part-text--overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__part-price {
+  width: 13%;
+  display: flex;
+}
+.menu h3 {
+  margin-bottom: 8px;
+}
+.menu p,
+.menu h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu p {
+  font-size: 15px;
+}
+.menu__cta {
+  margin: 45px 0 0 0;
+}
+
 .call-to-action {
   border-radius: 50px;
   background: linear-gradient(-5deg, #9356dc, #ff79da);
   text-decoration: none;
-  padding: 20px;
   color: #ffffff;
+  font-size: 14px;
+}
+.call-to-action--padding-1 {
+  padding: 16px 20px;
+}
+.call-to-action--padding-2 {
+  padding: 16px 45px;
 }
 
 .bouton-nouveau {

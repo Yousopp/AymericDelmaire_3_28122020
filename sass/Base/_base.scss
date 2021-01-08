@@ -12,4 +12,8 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $color-light;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -2,8 +2,14 @@
   border-radius: 50px;
   background: linear-gradient(-5deg, $colour-primary, $colour-secondary);
   text-decoration: none;
-  padding: 20px;
   color: $color-white;
+  font-size: 14px;
+  &--padding-1 {
+    padding: 16px 20px;
+  }
+  &--padding-2 {
+    padding: 16px 45px;
+  }
 }
 
 .bouton-nouveau {

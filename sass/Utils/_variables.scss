@@ -16,11 +16,18 @@ $color-logo: #7e7e7e;
   border: red solid 1px;
 }
 
-.flex-column-center {
+.flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  &--center {
+    justify-content: center;
+  }
+  &--align {
+    align-items: center;
+  }
+  &--bot {
+    justify-content: flex-end;
+  }
 }
 
 .flex-row {
@@ -28,6 +35,9 @@ $color-logo: #7e7e7e;
   flex-direction: row;
   &--center {
     justify-content: center;
+    align-items: center;
+  }
+  &--align {
     align-items: center;
   }
 }
