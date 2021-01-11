@@ -23,35 +23,18 @@
   }
 }
 
-.footer {
-  padding: 25px;
-  color: $color-white;
-  background-color: $color-dark;
-  line-height: 25px;
-  &__heading {
-    font-weight: 500;
-    font-size: 20px;
-  }
-  &__lien {
-    text-decoration: none;
-    color: $color-white;
-  }
-  & svg {
-    fill: $color-white;
-    margin-right: 10px;
-  }
-}
-
 .image-presentation {
   object-fit: cover;
 }
 
 .menu {
-  padding: 40px 12.5px 0 12.5px;
+  padding: 40px 12.5px 50px 12.5px;
   background-color: $color-light;
   border-radius: 50px 50px 0 0;
+  /***********************************Point à voir !********************************/
   position: relative;
   top: -50px;
+  /***********************************Point à voir !********************************/
   &__heading {
     padding-left: 5px;
     margin-right: 30px;
@@ -102,5 +85,24 @@
   }
   &__cta {
     margin: 45px 0 0 0;
+  }
+}
+
+.footer {
+  padding: 25px;
+  color: $color-white;
+  background-color: $color-dark;
+  line-height: 25px;
+  &__heading {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__lien {
+    text-decoration: none;
+    color: $color-white;
+  }
+  & svg {
+    fill: $color-white;
+    margin-right: 10px;
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 .b {
   border: red solid 1px;
@@ -58,12 +59,34 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f6f6f6;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*.lds-circle {
+  position: fixed;
+  display: inline-block;
+}
+.lds-circle > div {
+  z-index: 9999;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-left: 150px;
+  margin-top: 150px;
+  border-radius: 50%;
+  background: red;
+  animation: lds-circle 2s forwards;
+}
+@keyframes lds-circle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
 .header {
   text-align: center;
 }
@@ -89,35 +112,18 @@ body {
   text-decoration: none;
 }
 
-.footer {
-  padding: 25px;
-  color: #ffffff;
-  background-color: #353535;
-  line-height: 25px;
-}
-.footer__heading {
-  font-weight: 500;
-  font-size: 20px;
-}
-.footer__lien {
-  text-decoration: none;
-  color: #ffffff;
-}
-.footer svg {
-  fill: #ffffff;
-  margin-right: 10px;
-}
-
 .image-presentation {
   object-fit: cover;
 }
 
 .menu {
-  padding: 40px 12.5px 0 12.5px;
+  padding: 40px 12.5px 50px 12.5px;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
+  /***********************************Point à voir !********************************/
   position: relative;
   top: -50px;
+  /***********************************Point à voir !********************************/
 }
 .menu__heading {
   padding-left: 5px;
@@ -169,6 +175,25 @@ body {
 }
 .menu__cta {
   margin: 45px 0 0 0;
+}
+
+.footer {
+  padding: 25px;
+  color: #ffffff;
+  background-color: #353535;
+  line-height: 25px;
+}
+.footer__heading {
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__lien {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer svg {
+  fill: #ffffff;
+  margin-right: 10px;
 }
 
 .call-to-action {
@@ -230,7 +255,7 @@ body {
   fill: #9356dc;
 }
 .functioning__logo {
-  margin-left: 35px;
+  margin-left: 15px;
   fill: #7e7e7e;
 }
 .functioning__text {
@@ -242,8 +267,8 @@ body {
   padding: 4px 10px;
   border-radius: 50%;
   color: #ffffff;
-  position: absolute;
-  left: 20px;
+  position: relative;
+  left: -12px;
 }
 
 /*restaurants*/

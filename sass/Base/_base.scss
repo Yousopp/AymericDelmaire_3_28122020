@@ -12,8 +12,31 @@ h1 {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: $color-light;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*.lds-circle {
+  position: fixed;
+  display: inline-block;
+}
+.lds-circle > div {
+  z-index: 9999;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-left: 150px;
+  margin-top: 150px;
+  border-radius: 50%;
+  background: red;
+  animation: lds-circle 2s forwards;
+}
+@keyframes lds-circle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/

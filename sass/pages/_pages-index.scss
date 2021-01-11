@@ -33,7 +33,7 @@
     }
   }
   &__logo {
-    margin-left: 35px;
+    margin-left: 15px;
     fill: $color-logo;
   }
   &__text {
@@ -45,8 +45,8 @@
     padding: 4px 10px;
     border-radius: 50%;
     color: $color-white;
-    position: absolute;
-    left: 20px;
+    position: relative;
+    left: -12px;
   }
 }
 
