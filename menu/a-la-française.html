@@ -3,176 +3,246 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>À la française</title>
   </head>
   <body>
-    <header class="section-header box-shadow">
-      <a href="index.html">
+    <header class="header">
+      <div class="header__heading header__heading--margin-right">
+        <a class="header__lien" href="/index.html">
+          <img
+            class="header__logo-arrow"
+            src="/coffre/images/logo/left-arrow.svg"
+            alt="arrow-return"
+            title="Flêche retour"
+            width="30px"
+          />
+        </a>
         <img
-          src="coffre/images/logo/ohmyfood@2x.svg"
+          src="/coffre/images/logo/ohmyfood@2x.svg"
           alt="Logo site"
           title="Logo ohmyfood"
-          height="22"
+          width="165"
         />
-      </a>
+      </div>
     </header>
 
     <img
-      src="coffre/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+      class="image-presentation"
+      src="/coffre/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
       alt="Photo restaurant"
       title="À la française"
       height="255"
       width="100%"
     />
 
-    <section>
-      <div>
-        <h1>À la française</h1>
+    <section class="menu">
+      <div class="flex-row flex-row--align">
+        <h1 class="menu__heading">À la française</h1>
         <img
-          src="coffre/images/logo/heart.svg"
+          src="/coffre/images/logo/heart.svg"
           alt="Coeur"
           title="Coeur like"
           height="22"
         />
       </div>
       <div>
-        <ul>
-          <h2>Entrées</h2>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Tartare de poulpe acidulé</h3>
-                  <p>Aux zestes d'orange</p>
-                  <p><strong>25€</strong></p>
-                </div></a
+        <h2 class="menu__second-heading">ENTRÉES</h2>
+        <hr />
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Tartare de poulpe acidulé</h3>
+                <p>Aux zestes d'orange</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
               >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Velouté de légumes d'antan</h3>
-                  <p>Carotte, panais, topinambour</p>
-                  <p><strong>35€</strong></p>
-                </div></a
+                <p><strong>25€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Velouté de légumes d'antan</h3>
+                <p>Carotte, panais, topinambour</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
               >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Soupe à l'oignon</h3>
-                  <p>Revisitée</p>
-                  <p><strong>20€</strong></p>
-                </div></a
+                <p><strong>35€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Soupe à l'oignon</h3>
+                <p>Revisitée</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
               >
-            </div>
-          </li>
-        </ul>
-
-        <ul>
-          <h2>Plats</h2>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Coquilles Saint-Jacques</h3>
-                  <p>Accompagnées d'une purée de panais</p>
-                  <p><strong>40€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Magret de canard</h3>
-                  <p>Et parmentier de pommes de terre</p>
-                  <p><strong>35€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                  <p>Sur son lit de gnocchis aux légumes</p>
-                  <p><strong>44€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-        </ul>
-
-        <ul>
-          <h2>Désserts</h2>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Pétales de violettes glacés</h3>
-                  <p>Et purée de noisettes</p>
-                  <p><strong>18€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Fondant au chocolat</h3>
-                  <p>Revisité</p>
-                  <p><strong>22€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-          <li>
-            <div>
-              <a
-                ><div>
-                  <h3>Millefeuille croustillant</h3>
-                  <p>Myrtilles et pâte d’amande</p>
-                  <p><strong>23€</strong></p>
-                </div></a
-              >
-            </div>
-          </li>
-        </ul>
+                <p><strong>20€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
       </div>
+
+      <div>
+        <h2 class="menu__second-heading">PLATS</h2>
+        <hr />
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Coquilles Saint-Jacques</h3>
+                <p>Accompagnées d'une purée de panais</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>40€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Magret de canard</h3>
+                <p>Et parmentier de pommes de terre</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>35€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <p>Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>44€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div>
+        <h2 class="menu__second-heading">DÉSSERTS</h2>
+        <hr />
+        <div class="menu__bouton box-shadow flex-row">
+          <div class="menu__part-text">
+              <h3>Pétales de violettes glacés</h3>
+              <p>Et purée de noisettes</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>18€</strong></p>
+              </div>
+            </div>
+        </div>
+        <div class="menu__bouton box-shadow flex-row">
+          <div class="menu__part-text">
+              <h3>Fondant au chocolat</h3>
+              <p>Revisité</p>
+          </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>22€</strong></p>
+              </div>
+            </div>
+        </div>
+        <div>
+          <a
+            ><div class="menu__bouton box-shadow flex-row">
+              <div class="menu__part-text">
+              <h3>Millefeuille croustillant</h3>
+              <p>Myrtilles et pâte d’amande</p>
+              </div>
+              <div
+                class="menu__part-price flex-column flex-column--bot flex-column--align"
+              >
+                <p><strong>23€</strong></p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="menu__cta flex-column flex-column--center flex-column--align">
+      <a class="call-to-action call-to-action--padding-2 box-shadow" href=""
+        >Commander</a
+      ></div>
     </section>
 
-    <footer>
-      <h1>ohmyfood</h1>
+    <footer class="footer">
+      <h1 class="footer__heading">ohmyfood</h1>
       <br />
-      <div>
-        <img
-          src="coffre/images/logo/couvert.svg"
-          alt="Restaurant"
-          title="Couvert restaurant"
+      <div class="flex-row">
+        <svg
           width="15"
-        />
+          x="0"
+          y="0"
+          viewBox="0 0 512 512"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <path
+                d="M258.669,138.155L239.299,9.088C238.531,3.84,234.029,0,228.76,0c-0.107,0-0.235,0-0.363,0    c-5.419,0.171-9.835,4.373-10.261,9.771l-9.344,112.064c-0.576,6.912-12.843,6.912-13.419,0L186.051,9.771    C185.581,4.245,180.973,0,175.427,0c-5.547,0-10.176,4.245-10.624,9.771l-9.344,112.064c-0.576,6.912-12.843,6.912-13.419,0    L132.717,9.771c-0.448-5.376-4.864-9.579-10.283-9.771c-0.128,0-0.235,0-0.341,0c-5.269,0-9.771,3.84-10.539,9.088L92.205,138.155    c-5.696,37.824,14.827,74.005,49.429,89.088l-16.469,230.827c-0.981,13.888,3.883,27.691,13.376,37.888    C148.013,506.155,161.432,512,175.384,512h0.085c13.931,0,27.371-5.845,36.864-16.043c9.493-10.197,14.357-24,13.376-37.888    L209.24,227.243C243.843,212.16,264.365,175.979,258.669,138.155z"
+              />
+            </g>
+          </g>
+          <g>
+            <path
+              d="M416.237,1.963c-2.816-2.005-6.443-2.475-9.707-1.344c-0.917,0.32-92.437,33.941-92.437,138.048    c0,74.944,24.384,112.789,38.101,128.149l-13.653,13.653c-1.749,1.749-2.837,4.032-3.072,6.485l-16.875,168.768    c-1.451,14.357,3.264,28.736,12.949,39.445C341.229,505.877,355.117,512,369.539,512c28.224,0,51.2-22.976,51.2-51.2V10.667    C420.76,7.189,419.075,3.968,416.237,1.963z"
+            />
+          </g>
+        </svg>
         <p>Proposer un restaurant</p>
       </div>
-      <div>
-        <img
-          src="coffre/images/logo/partner.svg"
-          alt="Partner"
-          title="Mains partenaire"
+      <div class="flex-row">
+        <svg
           width="15"
-        />
+          x="0"
+          y="0"
+          viewBox="0 0 448 448"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g transform="matrix(1,0,0,1,0,85)">
+            <path
+              d="m56 144c0-4.417969 3.582031-8 8-8h20c6.628906 0 12 5.371094 12 12s-5.371094 12-12 12h-20c-4.417969 0-8-3.582031-8-8zm16 40c0-4.417969 3.582031-8 8-8h20c6.628906 0 12 5.371094 12 12s-5.371094 12-12 12h-20c-4.417969 0-8-3.582031-8-8zm16 40c0-4.417969 3.582031-8 8-8h20c6.628906 0 12 5.371094 12 12s-5.371094 12-12 12h-20c-4.417969 0-8-3.582031-8-8zm44 56h-20c-4.417969 0-8-3.582031-8-8v-8c0-4.417969 3.582031-8 8-8h20c6.628906 0 12 5.371094 12 12s-5.371094 12-12 12zm180-16h-11.71875l-29.601562-44.441406-13.3125 8.882812 23.6875 35.558594h-28.796876l-29.601562-44.441406-13.3125 8.882812 23.710938 35.558594h-28.796876l-29.601562-44.441406-13.3125 8.882812 23.710938 35.558594h-16.574219c-3.175781-.058594-6.304688-.769531-9.191407-2.089844-2.210937-9.691406-9.394531-17.484375-18.875-20.476562 4.132813-7.292969 4.726563-16.066406 1.617188-23.847656-3.113281-7.78125-9.59375-13.722657-17.617188-16.152344 4.132813-7.292969 4.726563-16.066406 1.617188-23.847656-3.113281-7.78125-9.59375-13.722657-17.617188-16.152344 2.320313-4.101563 3.550782-8.722656 3.585938-13.433594 0-15.464844-12.535156-28-28-28h-20c-3.207031-.003906-6.382812.636719-9.335938 1.886719l-16.167968-22.550781c-1.503906-2.09375-3.921875-3.335938-6.496094-3.335938h-32v-96h109.257812l62.300782 48.433594c-15.804688 2.117187-27.589844 15.621094-27.558594 31.566406 0 17.671875 14.328125 32 32 32h75.289062l77.511719 139.535156c-2.28125 7.375-9.082031 12.421875-16.800781 12.464844zm136-24h-107.296875l-22.222656-40h41.519531v-16h-50.398438l-46.640624-83.945312c-1.421876-2.503907-4.078126-4.054688-6.960938-4.054688h-80c-8.835938 0-16-7.164062-16-16s7.164062-16 16-16h85.601562l117.984376 78.65625c1.308593.871094 2.84375 1.335938 4.414062 1.34375h64zm0 0"
+            />
+          </g>
+        </svg>
         <p>Devenir partenaire</p>
       </div>
       <p>Mentions légales</p>
-      <p>Contact</p>
+      <a class="footer__lien" href="mailto:aymeric.delmaire@hotmail.com"
+        >Contact</a
+      >
     </footer>
   </body>
 </html>

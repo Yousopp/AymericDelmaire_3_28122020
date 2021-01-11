@@ -71,7 +71,7 @@ body {
   padding: 20px 0 12px 0;
 }
 .header__heading--margin-right {
-  margin-right: 15px;
+  margin-right: 45px;
 }
 .header__city {
   background-color: #eaeaea;
@@ -144,7 +144,7 @@ body {
   width: 320px;
 }
 .menu__part-text {
-  width: 87%;
+  width: 90%;
 }
 .menu__part-text--overflow {
   text-overflow: ellipsis;
@@ -152,20 +152,20 @@ body {
   white-space: nowrap;
 }
 .menu__part-price {
-  width: 13%;
+  width: 10%;
   display: flex;
 }
 .menu h3 {
   margin-bottom: 8px;
+  font-size: 19px;
 }
-.menu p,
-.menu h3 {
+.menu p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 .menu p {
-  font-size: 15px;
+  font-size: 15.5px;
 }
 .menu__cta {
   margin: 45px 0 0 0;
