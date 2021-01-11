@@ -17,26 +17,43 @@ body {
   margin-right: auto;
 }
 
-/*.lds-circle {
-  position: fixed;
-  display: inline-block;
+.loading-spinner {
+  background-color: $color-dark;
+  position: absolute;
+  text-align: center;
+  padding-top: 250px;
+  width: 375px;
+  height: 100vh;
+  z-index: 999;
+  opacity: 0;
+  animation: test 3s ease-out 1;
 }
-.lds-circle > div {
-  z-index: 9999;
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  margin-left: 150px;
-  margin-top: 150px;
-  border-radius: 50%;
-  background: red;
-  animation: lds-circle 2s forwards;
-}
-@keyframes lds-circle {
-  0% {
+
+@keyframes test {
+  0%,
+  90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}*/
+}
+
+.logo-loading {
+  animation: rotation-logo 3s ease 1;
+}
+
+@keyframes rotation-logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(360deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: scale(25);
+  }
+}
