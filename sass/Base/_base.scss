@@ -15,11 +15,12 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 1px 1px 30px 5px $color-dark;
 }
 
 .loading-spinner {
   background-color: $color-dark;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,7 +28,7 @@ body {
   text-align: center;
   z-index: 999;
   opacity: 0;
-  animation: loading 3s ease-out forwards;
+  animation: loading 2s ease-out forwards;
 }
 
 @keyframes loading {
@@ -42,10 +43,9 @@ body {
 }
 
 .logo-loading {
-  z-index: 1;
   position: sticky;
   top: 40%;
-  animation: rotation-logo 3s ease 1;
+  animation: rotation-logo 2s ease 1;
 }
 
 @keyframes rotation-logo {
@@ -58,11 +58,8 @@ body {
   80% {
     transform: rotateY(0deg);
   }
-  99% {
-    transform: scale(25);
-  }
   100% {
-    transform: scale(1);
-    z-index: 1;
+    transform: scale(25);
+    z-index: -1;
   }
 }
