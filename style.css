@@ -38,6 +38,9 @@
 .box-shadow {
   box-shadow: 5px 5px 5px #cecece;
 }
+.box-shadow:hover {
+  box-shadow: 5px 5px 5px #818181;
+}
 
 .padding-topbot-20 {
   padding: 20px 0;
@@ -107,6 +110,18 @@ body {
     z-index: -1;
   }
 }
+.remplissage-heart:hover {
+  animation: remplir 1s ease-in forwards;
+}
+
+@keyframes remplir {
+  from {
+    fill: #ffffff;
+  }
+  to {
+    fill: #9356dc;
+  }
+}
 .header {
   text-align: center;
   background-color: #ffffff;
@@ -168,6 +183,7 @@ body {
   margin: 15px 0;
   padding: 10px 15px;
   width: 320px;
+  transition: ease 0.4s;
 }
 .menu__part-text {
   width: 90%;
@@ -222,12 +238,16 @@ body {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
+  transition: ease 0.4s;
 }
 .call-to-action--padding-1 {
   padding: 16px 20px;
 }
 .call-to-action--padding-2 {
   padding: 16px 45px;
+}
+.call-to-action:hover {
+  opacity: 0.8;
 }
 
 .bouton-nouveau {
@@ -306,6 +326,7 @@ body {
   width: 335px;
   margin: 20px 0;
   background-color: #ffffff;
+  transition: ease 0.4s;
 }
 .restaurant__image {
   border-radius: 12px 12px 0 0;

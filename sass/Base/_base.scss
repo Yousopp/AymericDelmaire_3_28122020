@@ -63,3 +63,18 @@ body {
     z-index: -1;
   }
 }
+
+.remplissage-heart {
+  &:hover {
+    animation: remplir 1s ease-in forwards;
+  }
+}
+
+@keyframes remplir {
+  from {
+    fill: $color-white;
+  }
+  to {
+    fill: $colour-primary;
+  }
+}

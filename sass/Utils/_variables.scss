@@ -10,6 +10,7 @@ $color-middle: #eaeaea;
 $color-dark: #353535;
 
 $color-shadow: #cecece;
+$color-shadow-hover: #818181;
 $color-logo: #7e7e7e;
 
 .b {
@@ -50,6 +51,9 @@ $color-logo: #7e7e7e;
 
 .box-shadow {
   box-shadow: 5px 5px 5px $color-shadow;
+  &:hover {
+    box-shadow: 5px 5px 5px $color-shadow-hover;
+  }
 }
 
 .padding-topbot {
