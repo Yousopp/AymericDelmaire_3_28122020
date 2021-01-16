@@ -41,6 +41,9 @@ $color-logo: #7e7e7e;
   &--align {
     align-items: center;
   }
+  &--between {
+    justify-content: space-between;
+  }
 }
 
 .flex-functioning {
@@ -62,5 +65,86 @@ $color-logo: #7e7e7e;
   }
   &-15 {
     padding: 15px 0;
+  }
+}
+
+/*
+Animation
+*/
+
+.loading-spinner {
+  background-color: $color-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: 999;
+  opacity: 0;
+  animation: loading 2s ease-out forwards;
+}
+
+@keyframes loading {
+  0%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.logo-loading {
+  position: sticky;
+  top: 40%;
+  animation: rotation-logo 2s ease 1;
+}
+
+@keyframes rotation-logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(360deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: scale(25);
+    z-index: -1;
+  }
+}
+
+.remplissage-heart {
+  cursor: pointer;
+  &:hover {
+    animation: remplir 0.7s ease-in forwards;
+  }
+}
+
+@keyframes remplir {
+  from {
+    fill: $color-white;
+  }
+  to {
+    fill: $colour-primary;
+  }
+}
+
+@mixin apparition-delay($delay) {
+  animation: apparition-delay 0.8s $delay ease-out forwards;
+}
+
+@keyframes apparition-delay {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

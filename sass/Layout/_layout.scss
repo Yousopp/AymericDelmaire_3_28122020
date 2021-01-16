@@ -58,7 +58,39 @@
     margin: 15px 0;
     padding: 10px 15px;
     width: 320px;
+    cursor: pointer;
+    opacity: 0;
     transition: ease 0.4s;
+    &--apparition-1 {
+      @include apparition-delay(2.5s);
+    }
+    &--apparition-2 {
+      @include apparition-delay(2.8s);
+    }
+    &--apparition-3 {
+      @include apparition-delay(3.1s);
+    }
+    &--apparition-4 {
+      @include apparition-delay(3.4s);
+    }
+    &--apparition-5 {
+      @include apparition-delay(3.7s);
+    }
+    &--apparition-6 {
+      @include apparition-delay(4s);
+    }
+    &--apparition-7 {
+      @include apparition-delay(4.3s);
+    }
+    &--apparition-8 {
+      @include apparition-delay(4.6s);
+    }
+    &--apparition-9 {
+      @include apparition-delay(4.9s);
+    }
+    &--apparition-10 {
+      @include apparition-delay(5.2s);
+    }
   }
   &__part-text {
     width: 90%;

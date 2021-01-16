@@ -28,6 +28,9 @@
 .flex-row--align {
   align-items: center;
 }
+.flex-row--between {
+  justify-content: space-between;
+}
 
 .flex-functioning {
   display: flex;
@@ -49,24 +52,9 @@
   padding: 15px 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 22px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 1px 1px 30px 5px #353535;
-}
-
+/*
+Animation
+*/
 .loading-spinner {
   background-color: #353535;
   position: fixed;
@@ -110,8 +98,11 @@ body {
     z-index: -1;
   }
 }
+.remplissage-heart {
+  cursor: pointer;
+}
 .remplissage-heart:hover {
-  animation: remplir 1s ease-in forwards;
+  animation: remplir 0.7s ease-in forwards;
 }
 
 @keyframes remplir {
@@ -122,6 +113,34 @@ body {
     fill: #9356dc;
   }
 }
+@keyframes apparition-delay {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 22px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 30px 5px #353535;
+}
+
 .header {
   text-align: center;
   background-color: #ffffff;
@@ -183,7 +202,39 @@ body {
   margin: 15px 0;
   padding: 10px 15px;
   width: 320px;
+  cursor: pointer;
+  opacity: 0;
   transition: ease 0.4s;
+}
+.menu__bouton--apparition-1 {
+  animation: apparition-delay 0.8s 2.5s ease-out forwards;
+}
+.menu__bouton--apparition-2 {
+  animation: apparition-delay 0.8s 2.8s ease-out forwards;
+}
+.menu__bouton--apparition-3 {
+  animation: apparition-delay 0.8s 3.1s ease-out forwards;
+}
+.menu__bouton--apparition-4 {
+  animation: apparition-delay 0.8s 3.4s ease-out forwards;
+}
+.menu__bouton--apparition-5 {
+  animation: apparition-delay 0.8s 3.7s ease-out forwards;
+}
+.menu__bouton--apparition-6 {
+  animation: apparition-delay 0.8s 4s ease-out forwards;
+}
+.menu__bouton--apparition-7 {
+  animation: apparition-delay 0.8s 4.3s ease-out forwards;
+}
+.menu__bouton--apparition-8 {
+  animation: apparition-delay 0.8s 4.6s ease-out forwards;
+}
+.menu__bouton--apparition-9 {
+  animation: apparition-delay 0.8s 4.9s ease-out forwards;
+}
+.menu__bouton--apparition-10 {
+  animation: apparition-delay 0.8s 5.2s ease-out forwards;
 }
 .menu__part-text {
   width: 90%;
@@ -287,6 +338,7 @@ body {
   border-radius: 12px;
   margin: 25px 0 25px 10px;
   padding: 25px 0;
+  cursor: pointer;
   transition: ease 0.4s;
 }
 .functioning__bouton:hover {
