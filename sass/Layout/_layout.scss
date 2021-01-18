@@ -98,7 +98,7 @@
     }
   }
   &__part-text {
-    width: 90%;
+    width: 100%;
     &--overflow {
       text-overflow: ellipsis;
       overflow: hidden;
@@ -106,13 +106,11 @@
     }
   }
   &__part-price {
-    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   & span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
     background-color: lightgreen;
     height: 100%;
     width: 50px;

@@ -252,7 +252,7 @@ body {
   animation: apparition-delay 0.8s 5.2s ease-out forwards;
 }
 .menu__part-text {
-  width: 90%;
+  width: 100%;
 }
 .menu__part-text--overflow {
   text-overflow: ellipsis;
@@ -260,13 +260,11 @@ body {
   white-space: nowrap;
 }
 .menu__part-price {
-  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .menu span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
   background-color: lightgreen;
   height: 100%;
   width: 50px;
