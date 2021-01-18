@@ -148,3 +148,18 @@ Animation
     transform: translateY(0);
   }
 }
+
+@mixin apparition-delay($delay) {
+  animation: apparition-delay 0.8s $delay ease-out forwards;
+}
+
+@keyframes apparition-delay {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
