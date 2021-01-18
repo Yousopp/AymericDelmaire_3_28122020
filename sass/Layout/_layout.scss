@@ -61,10 +61,15 @@
     position: relative;
     cursor: pointer;
     opacity: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
-    transition: ease 0.4s;
+    &:hover div.menu__part-price {
+      transform: translateX(-50px);
+      opacity: 1;
+    }
     &:hover span {
-      transform: translateX(0);
+      transform: translateX(-50px);
     }
     &--apparition-1 {
       @include apparition-delay(2.5s);
@@ -98,24 +103,27 @@
     }
   }
   &__part-text {
-    width: 100%;
-    &--overflow {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+  }
+  & span {
+    transition: 0.4s ease-in-out;
   }
   &__part-price {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  & span {
-    background-color: lightgreen;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
     width: 50px;
-    transform: translateX(50px);
-    transition: 0.4s;
+    height: 100%;
+    border-radius: 0 12px 12px 0;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
   }
   & h3 {
     margin-bottom: 8px;
@@ -125,9 +133,12 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-  }
-  & p {
     font-size: 15.5px;
+  }
+  &:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   &__cta {
     margin: 45px 0 0 0;
