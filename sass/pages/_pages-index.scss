@@ -61,9 +61,10 @@
     padding-bottom: 20px;
   }
   &__card {
+    position: relative;
     border-radius: 12px;
     height: 250px;
-    width: 335px;
+    width: 100%;
     margin: 20px 0;
     background-color: $color-white;
     transition: ease 0.4s;

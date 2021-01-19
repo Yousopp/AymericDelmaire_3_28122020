@@ -15,5 +15,6 @@ body {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 1px 1px 30px 5px $color-dark;
+  box-shadow: 1px 1px 50px 25px black;
+  background: linear-gradient(-5deg, $colour-third, $colour-primary);
 }

@@ -82,7 +82,7 @@ Animation
   text-align: center;
   z-index: 999;
   opacity: 0;
-  animation: loading 2s ease-out forwards;
+  animation: loading 1.5s ease-out forwards;
 }
 
 @keyframes loading {
@@ -98,8 +98,8 @@ Animation
 
 .logo-loading {
   position: sticky;
-  top: 40%;
-  animation: rotation-logo 2s ease 1;
+  top: 45%;
+  animation: rotation-logo 1.5s ease 1;
 }
 
 @keyframes rotation-logo {
@@ -121,7 +121,7 @@ Animation
 .remplissage-heart {
   cursor: pointer;
   &:hover {
-    animation: remplir 0.7s ease-in forwards;
+    animation: remplir 0.5s ease-in forwards;
   }
 }
 
@@ -149,17 +149,11 @@ Animation
   }
 }
 
-@mixin apparition-delay($delay) {
-  animation: apparition-delay 0.8s $delay ease-out forwards;
-}
-
-@keyframes apparition-delay {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
+@keyframes validation-anim {
+  0% {
+    transform: rotateZ(360deg);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100% {
+    transform: rotateZ(0deg);
   }
 }

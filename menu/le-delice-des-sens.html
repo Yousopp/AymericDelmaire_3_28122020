@@ -12,10 +12,12 @@
       <img
         class="logo-loading"
         src="../coffre/images/logo/couvert.svg"
-        width="50px"
+        alt="loading-spinner"
+        title="Logo loading"
+        width="50"
       />
     </div>
-    
+
     <header class="header">
       <div class="header__heading header__heading--margin-right">
         <a class="header__lien" href="/index.html">
@@ -24,7 +26,7 @@
             src="../coffre/images/logo/left-arrow.svg"
             alt="arrow-return"
             title="Flêche retour"
-            width="30px"
+            width="30"
           />
         </a>
         <img
@@ -42,32 +44,32 @@
       alt="Photo restaurant"
       title="À la française"
       height="255"
-      width="100%"
+      width="375"
     />
 
     <section class="menu">
       <div class="flex-row flex-row--between flex-row--align">
-        <h1 class="menu__heading">Le délice des sens</h1>
+        <h2 class="menu__heading">Le délice des sens</h2>
         <svg
-                width="25"
-                height="25"
-                x="0"
-                y="0"
-                viewBox="0 0 412.735 412.735"
-                style="enable-background: new 0 0 512 512"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    class="remplissage-heart"
-                    d="M295.706,46.058C354.45,46.344,402,93.894,402.286,152.638   c0,107.624-195.918,214.204-195.918,214.204S10.449,258.695,10.449,152.638c0-58.862,47.717-106.58,106.58-106.58l0,0   c36.032-0.281,69.718,17.842,89.339,48.065C226.123,64.047,259.722,45.971,295.706,46.058z"
-                    fill="#FFF"
-                  />
-                  <path
-                    d="M206.367,377.291c-1.854-0.024-3.664-0.567-5.224-1.567C193.306,371.544,0,263.397,0,152.638   C0,88.005,52.395,35.609,117.029,35.609l0,0c34.477-0.406,67.299,14.757,89.339,41.273   c41.749-49.341,115.591-55.495,164.932-13.746c26.323,22.273,41.484,55.02,41.436,89.501   c0,112.327-193.306,218.906-201.143,223.086C210.031,376.723,208.221,377.266,206.367,377.291z M117.029,56.507   c-53.091,0-96.131,43.039-96.131,96.131l0,0c0,89.861,155.167,184.424,185.469,202.188   c30.302-17.241,185.469-111.282,185.469-202.188c0.087-53.091-42.881-96.201-95.972-96.289   c-32.501-0.053-62.829,16.319-80.615,43.521c-3.557,4.905-10.418,5.998-15.323,2.44c-0.937-0.68-1.761-1.503-2.44-2.44   C179.967,72.479,149.541,56.08,117.029,56.507z"
-                  />
-                </g>
-              </svg>
+          width="25"
+          height="25"
+          x="0"
+          y="0"
+          viewBox="0 0 412.735 412.735"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              class="remplissage-heart"
+              d="M295.706,46.058C354.45,46.344,402,93.894,402.286,152.638   c0,107.624-195.918,214.204-195.918,214.204S10.449,258.695,10.449,152.638c0-58.862,47.717-106.58,106.58-106.58l0,0   c36.032-0.281,69.718,17.842,89.339,48.065C226.123,64.047,259.722,45.971,295.706,46.058z"
+              fill="#FFF"
+            />
+            <path
+              d="M206.367,377.291c-1.854-0.024-3.664-0.567-5.224-1.567C193.306,371.544,0,263.397,0,152.638   C0,88.005,52.395,35.609,117.029,35.609l0,0c34.477-0.406,67.299,14.757,89.339,41.273   c41.749-49.341,115.591-55.495,164.932-13.746c26.323,22.273,41.484,55.02,41.436,89.501   c0,112.327-193.306,218.906-201.143,223.086C210.031,376.723,208.221,377.266,206.367,377.291z M117.029,56.507   c-53.091,0-96.131,43.039-96.131,96.131l0,0c0,89.861,155.167,184.424,185.469,202.188   c30.302-17.241,185.469-111.282,185.469-202.188c0.087-53.091-42.881-96.201-95.972-96.289   c-32.501-0.053-62.829,16.319-80.615,43.521c-3.557,4.905-10.418,5.998-15.323,2.44c-0.937-0.68-1.761-1.503-2.44-2.44   C179.967,72.479,149.541,56.08,117.029,56.507z"
+            />
+          </g>
+        </svg>
       </div>
       <div>
         <h2 class="menu__second-heading">ENTRÉES</h2>
@@ -75,44 +77,56 @@
         <div>
           <a
             ><div class="menu__bouton box-shadow menu__bouton--apparition-1">
-                  <h3>Tartare de thon</h3>
-                <div class="menu__part-text">
-                  <p>Assaisonné au yuzu</p>
-                  <span><strong>25€</strong></span>
-                </div>
-                <div class="menu__part-price">test</div>
-            </div></a
-          >
+              <h3>Tartare de thon</h3>
+              <div class="menu__part-text">
+                <p>Assaisonné au yuzu</p>
+                <span><strong>25€</strong></span>
+              </div>
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
         <div>
           <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-2">
+            ><div class="menu__bouton box-shadow menu__bouton--apparition-2">
+              <h3>Bouchée de homard croustillant</h3>
               <div class="menu__part-text">
-                <h3>Bouchée de homard croustillant</h3>
                 <p>Et sa farandole de petits légumes</p>
+                <span><strong>35€</strong></span>
               </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>35€</strong></p>
-              </div>
-            </div></a
-          >
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
         <div>
           <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-3">
+            ><div class="menu__bouton box-shadow menu__bouton--apparition-3">
+              <h3>Velouté de cèpes</h3>
               <div class="menu__part-text">
-                <h3>Velouté de cèpes</h3>
                 <p>Aux truffes</p>
+                <span><strong>20€</strong></span>
               </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>20€</strong></p>
-              </div>
-            </div></a
-          >
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
       </div>
 
@@ -121,98 +135,117 @@
         <hr />
         <div>
           <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-4">
+            ><div class="menu__bouton box-shadow menu__bouton--apparition-4">
+              <h3>Poulet rôti aux herbes de Provence</h3>
               <div class="menu__part-text">
-                <h3>Poulet rôti aux herbes de Provence</h3>
                 <p>Et sa crème de truffe</p>
+                <span><strong>40€</strong></span>
               </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>40€</strong></p>
-              </div>
-            </div></a
-          >
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
         <div>
           <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-5">
+            ><div class="menu__bouton box-shadow menu__bouton--apparition-5">
+              <h3>Langouste rôtie</h3>
               <div class="menu__part-text">
-                <h3>Langouste rôtie</h3>
                 <p>Et ses légumes de saison</p>
+                <span><strong>35€</strong></span>
               </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>35€</strong></p>
-              </div>
-            </div></a
-          >
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
         <div>
           <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-6">
+            ><div class="menu__bouton box-shadow menu__bouton--apparition-6">
+              <h3>Côte de boeuf Angus</h3>
               <div class="menu__part-text">
-                <h3>Côte de boeuf Angus</h3>
                 <p>Et sa purée de panais</p>
+                <span><strong>44€</strong></span>
               </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>44€</strong></p>
-              </div>
-            </div></a
-          >
+              <div class="menu__part-price">
+                <img
+                  class="menu__part-price--anim-rotate"
+                  src="../coffre/images/logo/checked.svg"
+                  alt="logovalidation"
+                  title="validation"
+                />
+              </div></div
+          ></a>
         </div>
       </div>
 
       <div>
         <h2 class="menu__second-heading">DÉSSERTS</h2>
         <hr />
-        <div class="menu__bouton box-shadow flex-row menu__bouton--apparition-7">
+        <div class="menu__bouton box-shadow menu__bouton--apparition-7">
+          <h3>Farandole de desserts</h3>
           <div class="menu__part-text">
-              <h3>Farandole de desserts</h3>
-              <p>Du chef</p>
-              </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>18€</strong></p>
-              </div>
-            </div>
-        </div>
-        <div class="menu__bouton box-shadow flex-row menu__bouton--apparition-8">
-          <div class="menu__part-text">
-              <h3>Crème brulée</h3>
-              <p>Revisitée</p>
+            <p>Du chef</p>
+            <span><strong>18€</strong></span>
           </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>22€</strong></p>
-              </div>
-            </div>
-        </div>
-        <div>
-          <a
-            ><div class="menu__bouton box-shadow flex-row menu__bouton--apparition-9">
-              <div class="menu__part-text">
-              <h3>Tiramisu</h3>
-              <p>À la noisette</p>
-              </div>
-              <div
-                class="menu__part-price flex-column flex-column--bot flex-column--align"
-              >
-                <p><strong>23€</strong></p>
-              </div>
-            </div></a
-          >
+          <div class="menu__part-price">
+            <img
+              class="menu__part-price--anim-rotate"
+              src="../coffre/images/logo/checked.svg"
+              alt="logovalidation"
+              title="validation"
+            />
+          </div>
         </div>
       </div>
+      <div class="menu__bouton box-shadow menu__bouton--apparition-8">
+        <h3>Crème brulée</h3>
+        <div class="menu__part-text">
+          <p>Revisitée</p>
+          <span><strong>22€</strong></span>
+        </div>
+        <div class="menu__part-price">
+          <img
+            class="menu__part-price--anim-rotate"
+            src="../coffre/images/logo/checked.svg"
+            alt="logovalidation"
+            title="validation"
+          />
+        </div>
+      </div>
+      <div>
+        <a
+          ><div class="menu__bouton box-shadow menu__bouton--apparition-9">
+            <h3>Tiramisu</h3>
+            <div class="menu__part-text">
+              <p>À la noisette</p>
+              <span><strong>23€</strong></span>
+            </div>
+            <div class="menu__part-price">
+              <img
+                class="menu__part-price--anim-rotate"
+                src="../coffre/images/logo/checked.svg"
+                alt="logovalidation"
+                title="validation"
+              />
+            </div></div
+        ></a>
+      </div>
       <div class="menu__cta flex-column flex-column--center flex-column--align">
-      <a class="call-to-action call-to-action--padding-2 box-shadow" href=""
-        >Commander</a
-      ></div>
+        <a class="call-to-action call-to-action--padding-2 box-shadow" href=""
+          >Commander</a
+        >
+      </div>
     </section>
 
     <footer class="footer">
