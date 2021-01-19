@@ -79,7 +79,7 @@ Animation
 }
 .logo-loading {
   position: sticky;
-  margin-top: 45%;
+  margin-top: 20%;
   animation: rotation-logo 1.5s ease 1;
 }
 
